@@ -1,7 +1,7 @@
 # Unix configuration Makefile for Moscow ML          -*- mode: makefile -*-
 
 # Where to install stuff
-PREFIX=/usr/local
+PREFIX=/usr
 
 # BINDIR contains true executable files, such as scripts
 # LIBDIR contains bytecode files (such as mosmlcmp and library units), and .dll/.so for dynlibs. 
@@ -17,9 +17,8 @@ TOOLDIR=${PREFIX}/share/mosml/tools
 
 ### Where to install the man pages
 # Man pages for commands go in $(MANDIR)/man$(MANEXT)
-MANDIR=${PREFIX}/man
+MANDIR=${PREFIX}/share/man
 MANEXT=1
-
 
 # The version
 VERSION=2.10
